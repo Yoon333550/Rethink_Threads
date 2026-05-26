@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#fff9e9;
+    color:#3A342F;
+}
+
+nav{
+    background:#c6a18a;
+    padding:20px 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a:active,
+nav a:focus {
+  background-color: #fff9e9; 
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo h3{
+    font-size:24px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#8a856a;
+}
+
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.text{
+    flex:1;
+}
+
+.text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.align{
+    font-size:55px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.text p{
+    line-height:1.9;
+    color:#555;
+    font-size:18px;
+}
+
+.alignp{
+    line-height:1.9;
+    color:#555;
+    font-size:18px;
+    text-align: center;
+}
+
+.image{
+    flex:1;
+    text-align:center;
+}
+
+.image img{
+    width:100%;
+    max-width:500px;
+    border-radius:40px;
+}
+
+.card{
+    background:#E6DDD4;
+    width:300px;
+    min-height:220px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:25px;
+    padding:40px 80px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:	#E6DDD4;
+    width:450px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align: center;
+}
+
+.card .card:hover{
+    transform:scale(1.03);
+}
+
+.card h2{
+    text-align: center;
+    margin-bottom:15px;
+    color:#3A342F;
+    font-family: sans-serif;
+}
+
+.card p{
+    font-family: sans-serif;
+    line-height:1.8;
+    color:#555;
+}
+
+.card a{
+    text-decoration:none;
+    color:black;
+}
+
+.About{
+    background:#f0e0d4;
+    padding:60px 80px;
+    margin:40px 80px;
+    border-radius:20px;
+}
+.About h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.About p{
+    line-height:1.9;
+    color:#555;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.container .card{
+    background:#ffe0c9;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.container .card:hover{
+    transform:scale(1.02);
+}
+
+.container .card img{
+    width:100%;
+    height:250px;
+    object-fit:fill;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h2{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    line-height:1.8;
+    color:#555;
+}
+
+
+.quote{
+    background:rgb(246, 196, 177);
+    margin:40px 80px;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.quote h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.quote p{
+    color:#555;
+    line-height:1.8;
+}
+
+
+footer{
+    background-color: #c6a18a;
+    text-align:center;
+    padding:30px;
+    color:black;
+}
+
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.text h1{
+    font-size:40px;
+}
+
+.container{
+    flex-direction: column;
+    grid-template-columns:1fr;
+    padding:20px;
+}
+
+.About{
+    margin:20px;
+    padding:40px 20px;
+}
+
+.card{
+    padding:20px;
+}
+
+.quote{
+    margin:20px;
+}
+
+}
+
+table{
+    align-items: center;
+    width: 50%;
+    flex:1;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    border-style:solid;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 0px;
+}
+
+th{
+    padding: 0px;
+    background-color: #c6a18a;
+    color: rgb(66, 33, 10);
+}
+
+tr{
+    padding: 0px;
+    background-color:rgb(211, 201, 189);
+    color: black;
+}
